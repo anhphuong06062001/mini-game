@@ -31,7 +31,7 @@ function checkAnswer(e) {
     if (selectedNumber === currentNumber) {
         e.target.style.visibility = "hidden";
         availableNumbers = availableNumbers.filter(num => num !== selectedNumber);
-        setTimeout(askQuestion, 500); 
+        setTimeout(askQuestion, 100); 
     } else {
         alert("You have chosen wrong, please choose another answer!");
     }
