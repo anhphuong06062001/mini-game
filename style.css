@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+}
+.title {
+    color: rgb(226, 100, 100);
+    font-size: 100px;
+}
+
+.balloon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#number{ 
+    font-size: 40px;
+    color: rgb(26, 165, 230);
+}
+#question{
+    font-size: 20px;
+    color: rgb(41, 209, 77);
+}
+.balloon {
+    width: 100px;
+    height: 150px;
+    background-color: rgb(44, 221, 132);
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    text-align: center;
+    line-height: 150px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.balloon:hover {
+    transform: scale(1.1);
+}
+
+.balloon:active {
+    transform: scale(0.9);
+}
+
